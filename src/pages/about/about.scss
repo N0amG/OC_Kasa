@@ -1,0 +1,8 @@
+@use '../../variables.scss' as *;
+
+.collapses {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	width: 100%;
+}
