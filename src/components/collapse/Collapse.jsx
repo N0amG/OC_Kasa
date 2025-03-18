@@ -25,16 +25,14 @@ export default function Collapse({ title, content }) {
 
 	return (
 		<div className={`collapse ${isOpen ? 'active' : ''}`}>
-			<div className='collapse-header' onClick={toggleCollapse}>
+			<div className='collapse-header'>
 				<h2 className='collapse-title'>{title}</h2>
 				<i
 					className={`collapse-icon ${isOpen ? 'active' : ''}`}
 					aria-label='Toggle collapse'
+					onClick={toggleCollapse}
 				>
-					<img
-						src={arrow}
-						alt='Toggle collapse'
-					/>
+					<img src={arrow} alt='Toggle collapse' />
 				</i>
 			</div>
 			<div className={`collapse-body ${isOpen ? 'active' : ''}`}>

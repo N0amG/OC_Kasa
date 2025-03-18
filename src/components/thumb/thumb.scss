@@ -33,4 +33,19 @@
 		justify-content: center;
 		align-items: center;
 	}
+
+	@media screen and (max-width: $mobile-breakpoint) {
+		width: 100%;
+		max-width: 335px;
+		height: 255px;
+		margin: 10px 0;
+		img {
+			min-height: 192px;
+			max-height: 192px;
+			width: 335px;
+			object-fit: cover;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+		}
+	}
 }
