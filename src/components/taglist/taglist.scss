@@ -1,0 +1,29 @@
+@use '../../variables.scss' as *;
+
+.taglist {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+.tag {
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $primary-color;
+	color: white;
+	font-size: 14px;
+	border-radius: 10px;
+	width: fit-content;
+	min-width: 115px;
+	height: 25px;
+	font-weight: bold;
+	line-height: 143%;
+	
+
+	@media screen and (max-width: $mobile-breakpoint) {
+		font-size: 10px;
+		min-width: 84px;
+		border-radius: 5px;
+		height: 18px;
+	}
+}

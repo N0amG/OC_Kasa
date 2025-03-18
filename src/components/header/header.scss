@@ -1,4 +1,4 @@
-@use '../../variables.scss';
+@use '../../variables.scss' as *;
 
 header {
 	display: flex;
@@ -12,7 +12,7 @@ header {
 			margin-left: 57px;
 		}
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: $mobile-breakpoint) {
 		justify-content: space-around;
 		a {
 			margin-left: 26px;

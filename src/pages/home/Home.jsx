@@ -20,10 +20,6 @@ export default function Home() {
 			<br/> Collapses :
 			<div className='collapses'>
 				<Collapse
-					title={'Fiabilité'}
-					content={'Super fiable tkt fréro'}
-				/>
-				<Collapse
 					title={'Description'}
 					content={logements[0].description}
 				/>

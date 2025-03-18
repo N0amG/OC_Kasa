@@ -1,4 +1,4 @@
-import './Tag.scss'
+import './taglist.scss'
 
 export default function TagList({ tags }) {
 	if (!Array.isArray(tags) || !tags.every(tag => typeof tag === 'string')) {

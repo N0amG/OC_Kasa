@@ -1,3 +1,5 @@
+@use '../../variables.scss' as *;
+
 footer {
 	height: 209px;
 	display: flex;
@@ -15,7 +17,7 @@ footer {
 		min-width: 122px;
 	}
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: $mobile-breakpoint) {
 		font-size: 12px;
 		gap: 0;
 		p {

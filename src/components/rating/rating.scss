@@ -1,3 +1,5 @@
+@use '../../variables.scss' as *;
+
 .rating {
 	display: flex;
 	justify-content: center;
@@ -5,7 +7,7 @@
 	width: 196px;
 	height: 36px;
 	gap: 4px;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: $mobile-breakpoint) {
 		width: 98px;
 		height: 18px;
 		gap: 2px;
