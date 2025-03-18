@@ -15,7 +15,7 @@
 	transition: background-color 0.3s;
 	margin: 20px;
 	&:hover {
-		background-color: darken($primary-color, 35%);
+		background-color: adjust-color($primary-color, $lightness: -40%);
 	}
 
 	img {
