@@ -3,10 +3,9 @@
 .banner {
 	position: relative;
 	object-fit: cover;
-	width: calc(100% - 70px);
+	width: 100%;
 	display: flex;
 	justify-self: center;
-	margin: 35px;
 	img {
 		width: 100%;
 		height: 223px;
@@ -32,7 +31,7 @@
 		font-weight: bold;
 		line-height: 143%;
 		-webkit-text-stroke: 1px black; // Ajoute une bordure noire autour des lettres
-		--text-stroke: 1px black; // Pour les navigateurs qui supportent text-stroke
+		--text-stroke: 1px black; // Pour les navigateurs qui supportent --text-stroke
 		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); // Ajoute une ombre aux lettres
 	}
 

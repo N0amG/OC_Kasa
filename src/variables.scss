@@ -1,3 +1,9 @@
 $primary-color: #FF6060;
 $background-grey: #F6F6F6;
-$mobile-breakpoint: 600px;
+$mobile-breakpoint: 1055px;
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

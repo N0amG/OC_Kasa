@@ -1,13 +1,22 @@
 @use 'scss-reset';
+@use 'variables.scss' as *;
 
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
 	margin: 0 auto;
+}
+main {
+	@extend %flex-center;
 	max-width: 1440px;
-
+	justify-self: center;
+	width: 100%;
 }
 a {
 	text-decoration: none;
 	color: inherit;
+}
+
+.active-link {
+	text-decoration: underline;
 }

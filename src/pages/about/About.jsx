@@ -1,4 +1,4 @@
-
-export default function Home() {
-	return <main></main>;
+import './about.scss'
+export default function About() {
+	return <main></main>
 }
