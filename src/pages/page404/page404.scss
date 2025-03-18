@@ -1,0 +1,21 @@
+@use '../../variables.scss' as *;
+
+main {
+	color: $primary-color;
+	@extend %flex-center;
+	gap: 139px;
+	h1 {
+		font-size: 288px;
+		font-weight: bold;
+		max-height:min-content;
+	}
+
+	p {
+		font-size: 36px;
+	}
+
+	.back-link {
+		color: black;
+		text-decoration: underline;
+	}
+}
