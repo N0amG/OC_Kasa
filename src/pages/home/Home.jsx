@@ -1,8 +1,11 @@
+import './Home.scss'
+import logements from '../../data/logements.json'
+import Banner_img from '../../assets/img/banner_1.png'
+import Banner_img2 from '../../assets/img/banner_2.png'
 import Tag from '../../components/tag/Tag'
 import Thumb from '../../components/thumb/Thumb'
 import Collapse from '../../components/collapse/Collapse'
-import './Home.scss'
-import logements from '../../data/logements.json'
+import Banner from '../../components/banner/Banner'
 
 export default function Home() {
 	return (
@@ -13,10 +16,28 @@ export default function Home() {
 				<Thumb key={logements[0].id} logement={logements[0]} />
 			</div>
 			<div className='collapses'>
-				<Collapse title={'Fiabilité'} content={'Super fiable tkt fréro'} />
-				<Collapse title={'Description'} content={logements[0].description} />
-				<Collapse title={'Équipements'} content={logements[0].equipments} />
+				<Collapse
+					title={'Fiabilité'}
+					content={'Super fiable tkt fréro'}
+				/>
+				<Collapse
+					title={'Description'}
+					content={logements[0].description}
+				/>
+				<Collapse
+					title={'Équipements'}
+					content={logements[0].equipments}
+				/>
 			</div>
+			<Banner
+				img={Banner_img}
+				title={'Chez vous, partout et ailleurs'}
+				shadow={60}
+			/>
+			<Banner
+				img={Banner_img2}
+				shadow={30}
+			/>
 		</main>
 	)
 }
