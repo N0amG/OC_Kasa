@@ -2,7 +2,7 @@
 
 .slider {
 	width: 100%;
-	height: 64.5%;
+	height: 415px;
 	@extend %flex-center;
 	border-radius: 25px;
 	overflow: hidden;
@@ -57,10 +57,12 @@
 		position: absolute;
 		bottom: 25px;
 		right: 50%;
+		transform: translateX(50%);
 		color: white;
 	}
 
 	@media screen and (max-width: $mobile-breakpoint) {
 		height: 50%;
+		max-height: 400px;
 	}
 }
