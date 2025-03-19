@@ -11,9 +11,9 @@ body {
 main {
 	@extend %flex-center;
 	max-width: 1440px;
-	justify-self: center;
 	width: 100%;
 	height: 100%;
+	margin: 0 auto; // Centre horizontalement dans un conteneur block (pour firefox)
 }
 a {
 	text-decoration: none;
