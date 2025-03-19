@@ -1,23 +1,22 @@
 @use '../../variables.scss' as *;
 
-main {
-	color: $primary-color;
+.page404 {
 	@extend %flex-center;
 	gap: 139px;
 	h1 {
 		font-size: 288px;
 		font-weight: bold;
 		max-height:min-content;
+		color: $primary-color;
 	}
 
 	p {
 		font-size: 36px;
 		text-align: center;
-
+		color: $primary-color;
 	}
 
 	.back-link {
-		color: black;
 		text-decoration: underline;
 	}
 

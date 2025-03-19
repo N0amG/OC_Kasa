@@ -1,8 +1,20 @@
 @use '../../variables.scss' as *;
 
-.collapses {
-	display: flex;
+.about {
+	@extend %flex-center;
 	flex-direction: column;
-	gap: 30px;
-	width: 100%;
+	gap: 38px;
+
+	.collapses {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		width: 82.5%;
+	}
+	@media screen and (max-width: $mobile-breakpoint) {
+		padding: 0 20px;
+		.collapses {
+			width: 100%;
+		}
+	}
 }

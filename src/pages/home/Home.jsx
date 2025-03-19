@@ -6,7 +6,7 @@ import Banner from '../../components/banner/Banner'
 
 export default function Home() {
 	return (
-		<main>
+		<main className='home'>
 			<Banner
 				img={Banner_img}
 				title={'Chez vous, partout et ailleurs'}

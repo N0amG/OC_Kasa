@@ -5,7 +5,7 @@ import Collapse from '../../components/collapse/Collapse'
 
 export default function About() {
 	return (
-		<main>
+		<main className='about'>
 			<Banner img={banner_2} shadow={40} title='' />
 			<div className='collapses'>
 				<Collapse
