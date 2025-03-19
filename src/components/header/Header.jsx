@@ -10,8 +10,10 @@ export default function Header() {
 		<header>
 			<img src={logo} alt='logo Kasa' />
 			<nav className='navbar'>
-				<Link to='/' className={`home-link ${location.pathname === '/' ? 'active-link' : ''}`}>Accueil</Link>
-				<Link to='/about' className={`about-link ${location.pathname === '/about' ? 'active-link' : ''}`}>A propos</Link>
+				<ul>
+					<li><Link to='/' className={`home-link ${location.pathname === '/' ? 'active-link' : ''}`}>Accueil</Link></li>
+					<li><Link to='/about' className={`about-link ${location.pathname === '/about' ? 'active-link' : ''}`}>A propos</Link></li>
+				</ul>
 			</nav>
 		</header>
 	)

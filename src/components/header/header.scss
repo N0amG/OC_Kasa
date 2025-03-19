@@ -9,15 +9,23 @@ header {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		a {
-			margin-left: 57px;
+		ul {
+			@extend %flex-center;
+			a {
+				margin-left: 57px;
+			}
 		}
+		
 	}
 	@media screen and (max-width: $mobile-breakpoint) {
 		justify-content: space-around;
-		a {
-			margin-left: 26px;
-			font-size: 12px;
+		.navbar {
+			ul {
+				a {
+					margin-left: 20px;
+					font-size: 12px;
+				}
+			}
 		}
 		img {
 			width: 145px;

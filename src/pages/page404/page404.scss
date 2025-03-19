@@ -12,10 +12,26 @@ main {
 
 	p {
 		font-size: 36px;
+		text-align: center;
+
 	}
 
 	.back-link {
 		color: black;
 		text-decoration: underline;
+	}
+
+	@media screen and (max-width: $mobile-breakpoint) {
+		gap: 131px;
+		h1 {
+			font-size: 98px;
+		}
+
+		p {
+			font-size: 18px;
+		}
+		.back-link {
+			font-size: 14px;
+		}
 	}
 }
