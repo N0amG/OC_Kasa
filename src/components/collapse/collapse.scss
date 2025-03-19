@@ -61,7 +61,7 @@
 
 	.collapse-body.active {
 		max-height: 100%;
-		height: fit-content;
+		height: max-content;
 		padding: 16px 20px 20px 20px;
 		transform: translateY(-4%); // Ramène le contenu à sa position d'origine
 	}
@@ -80,7 +80,6 @@
 			font-size: 12px;
 		}
 		.collapse-body.active {
-			height: 151px;
 			padding-top: 13px;
 		}
 	}

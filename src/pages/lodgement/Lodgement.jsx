@@ -13,7 +13,7 @@ export default function Lodgement() {
 		<main className='lodgement'>
 			<Slider imgList={logement.pictures} />
 			<div className='lodgement-top'>
-				<div className='lodgement_text'>
+				<div className='lodgement-text'>
 					<h1 className='lodgement-title'>{logement.title}</h1>
 					<span className='lodgement-location'>
 						{logement.location}
@@ -27,11 +27,11 @@ export default function Lodgement() {
 						alt={logement.host.name}
 					/>
 				</div>
-			</div>
 
-			<div className='lodgement-middle'>
-				<TagList tags={logement.tags} />
-				<Rating rating={logement.rating} />
+				<div className='lodgement-middle'>
+					<TagList tags={logement.tags} />
+					<Rating rating={logement.rating} />
+				</div>
 			</div>
 			<div className='lodgement-bottom'>
 				<Collapse
