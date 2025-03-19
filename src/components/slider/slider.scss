@@ -1,0 +1,66 @@
+@use '../../variables.scss' as *;
+
+.slider {
+	width: 100%;
+	height: 64.5%;
+	@extend %flex-center;
+	border-radius: 25px;
+	overflow: hidden;
+	position: relative;
+
+	.button {
+		width: 100px;
+		height: 100%;
+		opacity: 0.5;
+		transition: opacity 0.3s ease;
+		position: absolute;
+		z-index: 2;
+		
+		.right_arrow {
+			transform: rotate(180deg);
+		}
+
+		&.previous-button {
+			left: 0;
+		}
+
+		&.next-button {
+			right: 0;
+		}
+
+		&:hover {
+			opacity: 1;
+		}
+		@media screen and (max-width: $mobile-breakpoint) {
+			width: 50px;
+			.right_arrow, .left_arrow {
+				width: 22px;
+				height: 38px;
+			}
+		}
+	}
+
+	.slides {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		transition: transform 0.5s ease-in-out;  // 🔥 Animation fluide
+	}
+
+	.slide {
+		min-width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.slide-number {
+		position: absolute;
+		bottom: 25px;
+		right: 50%;
+		color: white;
+	}
+
+	@media screen and (max-width: $mobile-breakpoint) {
+		height: 50%;
+	}
+}
