@@ -3,8 +3,51 @@
 .lodgement {
 	width: 100%;
 	height: 643px;
-	background-color: #a7a6a6;
 	@extend %flex-center;
 	flex-direction: column;
 	justify-content: space-between;
+	padding: 0 100px;
+	.lodgement-top {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		margin: 24px 0 20px 0;
+		.lodgement-title {
+			font-size: 36px;
+			line-height: 143%;
+			color: $primary-color;
+			vertical-align: bottom;
+		}
+
+		.host {
+			@extend %flex-center;
+			gap: 10px;
+			.host-img {
+				width: 64px;
+				height: 64px;
+				border-radius: 50%;
+			}
+			.host-name {
+				font-size: 18px;
+				line-height: 143%;
+				color: $primary-color;
+				width: 50%;
+				text-align: right;
+			}
+		}
+	}
+
+	.lodgement-middle {
+		@extend %flex-center;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.lodgement-bottom {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		gap: 75px;
+		margin-top: 21px;
+	}
 }
