@@ -53,6 +53,11 @@
 		width: 100%;
 		gap: 75px;
 		margin-top: 21px;
+		max-height: max-content;
+		.collapse.active .collapse-body  {
+			height: 100%;
+			max-height: 100%;
+		}
 	}
 
 	@media screen and (max-width: $mobile-breakpoint) {
@@ -98,6 +103,10 @@
 			margin-top: 0;
 			.collapse {
 				max-width: 100%;
+			}
+			.collapse.active .collapse-body  {
+				height: 100%;
+				max-height: 500px;
 			}
 		}
 	}

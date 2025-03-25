@@ -24,10 +24,14 @@
 		}
 
 		.collapse-icon {
-			vertical-align: none;
+			display: flex;
 			width: 24px;
 			height: 24px;
 			transition: transform 0.3s ease;
+			align-items: center;
+			img {
+				vertical-align: baseline;
+			}
 		}
 	}
 
@@ -46,19 +50,21 @@
 			transform: translateY(-20px);
 			transition: transform 0.3s ease;
 			margin: 0;
+			line-height: 1.7;
 		}
 
-		ul {
-			list-style: none;
-			padding: 0;
-			margin: 0;
-
-			li {
-				margin-bottom: 6px;
-			}
-		}
 	}
 
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		li {
+			margin-bottom: 3px;
+		}
+	}
+	
 	/* Quand le collapse est ouvert, on ajoute la classe "active" sur le conteneur .collapse */
 	&.active {
 		.collapse-body {
@@ -67,10 +73,6 @@
 
 			p {
 				transform: translateY(0);
-			}
-
-			ul li {
-				margin-bottom: 15px;
 			}
 		}
 
@@ -100,7 +102,6 @@
 
 			ul li {
 				font-size: 13px;
-				margin-bottom: 10px;
 			}
 		}
 	}
