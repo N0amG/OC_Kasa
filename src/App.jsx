@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
 import './App.scss'
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
@@ -16,7 +16,8 @@ function App() {
 				<Route path='/' element={<Home />} />
 				<Route path='/about' element={<About />} />
 				<Route path='/lodgement/:id' element={<Lodgement />} />
-				<Route path='*' element={<Page404 />} />
+				<Route path='/404' element={<Page404 />} />
+				<Route path='*' element={<Navigate to="/404" replace />} />
 			</Routes>
 			<Footer />
 		</Router>

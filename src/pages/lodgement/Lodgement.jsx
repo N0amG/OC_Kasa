@@ -1,6 +1,6 @@
 import './lodgement.scss'
 import logements from '../../data/logements.json'
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 import Slider from '../../components/slider/Slider'
 import TagList from '../../components/tagList/TagList'
 import Rating from '../../components/rating/Rating'
@@ -9,6 +9,11 @@ import Collapse from '../../components/collapse/Collapse'
 export default function Lodgement() {
 	const { id } = useParams()
 	const logement = logements.find((logement) => logement.id === String(id))
+	// Si l'id n'est pas valide, redirige vers la page 404
+	if (!logement) {
+		return <Navigate to='/404' />
+	}
+
 	return (
 		<main className='lodgement'>
 			<Slider imgList={logement.pictures} />
